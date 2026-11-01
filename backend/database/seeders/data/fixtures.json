@@ -1,0 +1,1869 @@
+{
+  "agents": [
+    {
+      "id": "a1",
+      "name": "Ahmed Raza",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+      "agency": "PropEdge Pakistan",
+      "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+      "phone": "+92-300-1111111",
+      "whatsapp": "923001111111",
+      "email": "ahmed@propedge.pk",
+      "verified": true,
+      "rating": 4.8,
+      "reviewCount": 142,
+      "totalListings": 38,
+      "activeSince": "2018-03-01",
+      "bio": "Senior property consultant with 8+ years specializing in DHA and Bahria Town developments across Lahore and Islamabad.",
+      "cities": [
+        "Lahore",
+        "Islamabad"
+      ]
+    },
+    {
+      "id": "a2",
+      "name": "Sara Khan",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b898?w=200&q=80",
+      "agency": "Prime Realty",
+      "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+      "phone": "+92-321-2222222",
+      "whatsapp": "923212222222",
+      "email": "sara@primerealty.pk",
+      "verified": true,
+      "rating": 4.9,
+      "reviewCount": 89,
+      "totalListings": 22,
+      "activeSince": "2020-06-15",
+      "bio": "Karachi's top-rated agent specialising in Clifton, Defence, and North Nazimabad residential and commercial properties.",
+      "cities": [
+        "Karachi"
+      ]
+    },
+    {
+      "id": "a3",
+      "name": "Usman Malik",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+      "phone": "+92-333-3333333",
+      "whatsapp": "923333333333",
+      "email": "usman.malik@gmail.com",
+      "verified": true,
+      "rating": 4.6,
+      "reviewCount": 56,
+      "totalListings": 14,
+      "activeSince": "2021-01-10",
+      "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+      "cities": [
+        "Rawalpindi",
+        "Islamabad"
+      ]
+    },
+    {
+      "id": "a4",
+      "name": "Fatima Zahra",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+      "agency": "Skyline Properties",
+      "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+      "phone": "+92-311-4444444",
+      "whatsapp": "923114444444",
+      "email": "fatima@skyline.pk",
+      "verified": false,
+      "rating": 4.5,
+      "reviewCount": 33,
+      "totalListings": 9,
+      "activeSince": "2022-09-01",
+      "bio": "Lahore-based specialist in upscale properties in Gulberg, Model Town, and DHA Phase 5–8.",
+      "cities": [
+        "Lahore"
+      ]
+    },
+    {
+      "id": "a5",
+      "name": "Bilal Chaudhry",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+      "agency": "Apex Developers",
+      "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+      "phone": "+92-315-5555555",
+      "whatsapp": "923155555555",
+      "email": "bilal@apex.pk",
+      "verified": true,
+      "rating": 4.7,
+      "reviewCount": 71,
+      "totalListings": 27,
+      "activeSince": "2019-05-20",
+      "bio": "Commercial property expert with a strong portfolio in Faisalabad, Gujranwala, and Sialkot industrial zones.",
+      "cities": [
+        "Faisalabad",
+        "Gujranwala",
+        "Sialkot"
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "p1",
+      "title": "5 Marla Modern House in DHA Phase 5 Lahore",
+      "slug": "5-marla-modern-house-dha-phase5-lahore",
+      "purpose": "buy",
+      "type": "house",
+      "status": "active",
+      "price": 32500000,
+      "area": 5,
+      "areaUnit": "marla",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "floors": 2,
+      "parkingSpaces": 2,
+      "furnished": "semi-furnished",
+      "location": {
+        "city": "Lahore",
+        "area": "DHA Phase 5",
+        "society": "DHA Lahore",
+        "address": "Block L, Street 12",
+        "lat": 31.4504,
+        "lng": 74.3587
+      },
+      "description": "Beautifully designed 5 Marla house in the heart of DHA Phase 5. Features a modern kitchen, imported tiles, and a serene garden. Walking distance to supermarkets, schools, and parks. Ideal for a growing family seeking comfort and security in one of Lahore's most sought-after localities.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "security",
+        "cctv",
+        "parking",
+        "park",
+        "mosque"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80",
+          "alt": "Front view",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1200&q=80",
+          "alt": "Living room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+          "alt": "Kitchen"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+          "alt": "Master bedroom"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+          "alt": "Bathroom"
+        }
+      ],
+      "agent": {
+        "id": "a1",
+        "name": "Ahmed Raza",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+        "agency": "PropEdge Pakistan",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-300-1111111",
+        "whatsapp": "923001111111",
+        "email": "ahmed@propedge.pk",
+        "verified": true,
+        "rating": 4.8,
+        "reviewCount": 142,
+        "totalListings": 38,
+        "activeSince": "2018-03-01",
+        "bio": "Senior property consultant with 8+ years specializing in DHA and Bahria Town developments across Lahore and Islamabad.",
+        "cities": [
+          "Lahore",
+          "Islamabad"
+        ]
+      },
+      "featured": true,
+      "premium": true,
+      "verified": true,
+      "priceDrop": 5,
+      "views": 1842,
+      "inquiries": 23,
+      "postedAt": "2026-10-01T10:00:00Z",
+      "updatedAt": "2026-10-28T08:00:00Z"
+    },
+    {
+      "id": "p2",
+      "title": "3 Bed Luxury Apartment in Clifton Block 5, Karachi",
+      "slug": "3bed-luxury-apartment-clifton-block5-karachi",
+      "purpose": "buy",
+      "type": "apartment",
+      "status": "active",
+      "price": 55000000,
+      "area": 2200,
+      "areaUnit": "sqft",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpaces": 1,
+      "furnished": "furnished",
+      "location": {
+        "city": "Karachi",
+        "area": "Clifton",
+        "society": "Block 5",
+        "address": "Ocean Towers, Floor 12",
+        "lat": 24.8138,
+        "lng": 67.0233
+      },
+      "description": "Premium fully furnished apartment on the 12th floor of Ocean Towers with panoramic sea views. European-style kitchen, imported wood flooring, and a private balcony. The building offers 24/7 security, a rooftop pool, and a dedicated fitness center.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "water",
+        "security",
+        "cctv",
+        "pool",
+        "gym",
+        "lift",
+        "parking"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80",
+          "alt": "Living room",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&q=80",
+          "alt": "Kitchen"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80",
+          "alt": "Bedroom"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200&q=80",
+          "alt": "View from balcony"
+        }
+      ],
+      "agent": {
+        "id": "a2",
+        "name": "Sara Khan",
+        "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b898?w=200&q=80",
+        "agency": "Prime Realty",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-321-2222222",
+        "whatsapp": "923212222222",
+        "email": "sara@primerealty.pk",
+        "verified": true,
+        "rating": 4.9,
+        "reviewCount": 89,
+        "totalListings": 22,
+        "activeSince": "2020-06-15",
+        "bio": "Karachi's top-rated agent specialising in Clifton, Defence, and North Nazimabad residential and commercial properties.",
+        "cities": [
+          "Karachi"
+        ]
+      },
+      "featured": true,
+      "premium": true,
+      "verified": true,
+      "views": 2310,
+      "inquiries": 41,
+      "postedAt": "2026-09-15T10:00:00Z",
+      "updatedAt": "2026-10-25T08:00:00Z"
+    },
+    {
+      "id": "p3",
+      "title": "10 Marla Residential Plot in Bahria Town Phase 7, Rawalpindi",
+      "slug": "10-marla-plot-bahria-town-phase7-rawalpindi",
+      "purpose": "buy",
+      "type": "plot",
+      "status": "active",
+      "price": 8800000,
+      "area": 10,
+      "areaUnit": "marla",
+      "location": {
+        "city": "Rawalpindi",
+        "area": "Bahria Town Phase 7",
+        "society": "Bahria Town",
+        "address": "Block C",
+        "lat": 33.5151,
+        "lng": 72.9897
+      },
+      "description": "Prime 10 Marla corner plot on a 40-foot road in Bahria Town Phase 7. Fully developed sector with all utilities available. Ideal for investment or construction. Level ground, ideal for a double-storey house. Transfer papers clear and available.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "sewerage",
+        "security",
+        "mosque",
+        "school",
+        "park",
+        "corner"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+          "alt": "Plot view",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=80",
+          "alt": "Society entrance"
+        }
+      ],
+      "agent": {
+        "id": "a3",
+        "name": "Usman Malik",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+        "phone": "+92-333-3333333",
+        "whatsapp": "923333333333",
+        "email": "usman.malik@gmail.com",
+        "verified": true,
+        "rating": 4.6,
+        "reviewCount": 56,
+        "totalListings": 14,
+        "activeSince": "2021-01-10",
+        "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+        "cities": [
+          "Rawalpindi",
+          "Islamabad"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 654,
+      "inquiries": 8,
+      "postedAt": "2026-10-10T10:00:00Z",
+      "updatedAt": "2026-10-22T08:00:00Z"
+    },
+    {
+      "id": "p4",
+      "title": "2 Kanal Farmhouse for Rent in Bedian Road, Lahore",
+      "slug": "2-kanal-farmhouse-rent-bedian-road-lahore",
+      "purpose": "rent",
+      "type": "farmhouse",
+      "status": "active",
+      "price": 250000,
+      "priceUnit": "per month",
+      "area": 2,
+      "areaUnit": "kanal",
+      "bedrooms": 6,
+      "bathrooms": 6,
+      "parkingSpaces": 10,
+      "furnished": "furnished",
+      "location": {
+        "city": "Lahore",
+        "area": "Bedian Road",
+        "address": "Near Canal Road Junction",
+        "lat": 31.364,
+        "lng": 74.21
+      },
+      "description": "Stunning 2 Kanal luxury farmhouse available for rent. Features a heated swimming pool, lush green lawns, multiple guest suites, a fully equipped kitchen, and a gazebo area perfect for events. Ideal for corporate retreats, wedding events, or extended family stays.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "security",
+        "pool",
+        "parking",
+        "servants",
+        "generator",
+        "underground"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
+          "alt": "Farmhouse exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1597047084993-3eda4c3d7a2b?w=1200&q=80",
+          "alt": "Swimming pool"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
+          "alt": "Garden"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1200&q=80",
+          "alt": "Interior"
+        }
+      ],
+      "agent": {
+        "id": "a4",
+        "name": "Fatima Zahra",
+        "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+        "agency": "Skyline Properties",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-311-4444444",
+        "whatsapp": "923114444444",
+        "email": "fatima@skyline.pk",
+        "verified": false,
+        "rating": 4.5,
+        "reviewCount": 33,
+        "totalListings": 9,
+        "activeSince": "2022-09-01",
+        "bio": "Lahore-based specialist in upscale properties in Gulberg, Model Town, and DHA Phase 5–8.",
+        "cities": [
+          "Lahore"
+        ]
+      },
+      "featured": true,
+      "premium": false,
+      "verified": true,
+      "views": 987,
+      "inquiries": 15,
+      "postedAt": "2026-10-05T10:00:00Z",
+      "updatedAt": "2026-10-20T08:00:00Z"
+    },
+    {
+      "id": "p5",
+      "title": "Commercial Shop for Rent in Gulberg III Main Boulevard",
+      "slug": "commercial-shop-rent-gulberg3-main-boulevard-lahore",
+      "purpose": "commercial",
+      "type": "shop",
+      "status": "active",
+      "price": 85000,
+      "priceUnit": "per month",
+      "area": 800,
+      "areaUnit": "sqft",
+      "location": {
+        "city": "Lahore",
+        "area": "Gulberg III",
+        "address": "Main Boulevard, Ground Floor",
+        "lat": 31.5204,
+        "lng": 74.3587
+      },
+      "description": "Prime ground-floor commercial shop on Gulberg III Main Boulevard. Glass front with high pedestrian traffic. Previously used as a branded showroom. Ideal for retail, bank branches, or food outlets. Parking space for 3 cars. Immediate possession available.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "water",
+        "security",
+        "cctv",
+        "parking"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200&q=80",
+          "alt": "Shop front",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80",
+          "alt": "Interior"
+        }
+      ],
+      "agent": {
+        "id": "a1",
+        "name": "Ahmed Raza",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+        "agency": "PropEdge Pakistan",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-300-1111111",
+        "whatsapp": "923001111111",
+        "email": "ahmed@propedge.pk",
+        "verified": true,
+        "rating": 4.8,
+        "reviewCount": 142,
+        "totalListings": 38,
+        "activeSince": "2018-03-01",
+        "bio": "Senior property consultant with 8+ years specializing in DHA and Bahria Town developments across Lahore and Islamabad.",
+        "cities": [
+          "Lahore",
+          "Islamabad"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 423,
+      "inquiries": 12,
+      "postedAt": "2026-10-12T10:00:00Z",
+      "updatedAt": "2026-10-25T08:00:00Z"
+    },
+    {
+      "id": "p6",
+      "title": "1 Kanal Brand New House in F-7/3 Islamabad",
+      "slug": "1-kanal-house-f7-3-islamabad",
+      "purpose": "buy",
+      "type": "house",
+      "status": "active",
+      "price": 145000000,
+      "area": 1,
+      "areaUnit": "kanal",
+      "bedrooms": 6,
+      "bathrooms": 7,
+      "floors": 2,
+      "parkingSpaces": 4,
+      "furnished": "unfurnished",
+      "location": {
+        "city": "Islamabad",
+        "area": "F-7/3",
+        "address": "Street 24",
+        "lat": 33.7215,
+        "lng": 73.0433
+      },
+      "description": "Architecturally masterplanned 1 Kanal house in the prestigious F-7 sector of Islamabad. Double-height entrance, Italian marble flooring, smart home automation, and a chef's kitchen with imported appliances. Features a basement gym and a rooftop terrace with city views.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "security",
+        "cctv",
+        "gym",
+        "parking",
+        "servants",
+        "roof",
+        "generator"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&q=80",
+          "alt": "Exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1200&q=80",
+          "alt": "Living room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+          "alt": "Kitchen"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+          "alt": "Master bedroom"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1200&q=80",
+          "alt": "Garden"
+        }
+      ],
+      "agent": {
+        "id": "a3",
+        "name": "Usman Malik",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+        "phone": "+92-333-3333333",
+        "whatsapp": "923333333333",
+        "email": "usman.malik@gmail.com",
+        "verified": true,
+        "rating": 4.6,
+        "reviewCount": 56,
+        "totalListings": 14,
+        "activeSince": "2021-01-10",
+        "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+        "cities": [
+          "Rawalpindi",
+          "Islamabad"
+        ]
+      },
+      "featured": true,
+      "premium": true,
+      "verified": true,
+      "views": 3241,
+      "inquiries": 54,
+      "postedAt": "2026-09-20T10:00:00Z",
+      "updatedAt": "2026-10-29T08:00:00Z"
+    },
+    {
+      "id": "p7",
+      "title": "Studio Apartment for Rent in Bahria Town Karachi",
+      "slug": "studio-apartment-rent-bahria-town-karachi",
+      "purpose": "rent",
+      "type": "apartment",
+      "status": "active",
+      "price": 35000,
+      "priceUnit": "per month",
+      "area": 650,
+      "areaUnit": "sqft",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "furnished": "furnished",
+      "location": {
+        "city": "Karachi",
+        "area": "Bahria Town",
+        "society": "Bahria Town Karachi",
+        "address": "Precinct 19, Tower A",
+        "lat": 25.1124,
+        "lng": 66.9891
+      },
+      "description": "Cozy furnished studio apartment in a gated community with round-the-clock security. Ideal for singles or couples. Includes a modern kitchenette, wardrobe, and a stunning view of the Bahria fountain. Close to the commercial area and food court.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "water",
+        "security",
+        "lift",
+        "parking",
+        "mosque"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1200&q=80",
+          "alt": "Studio view",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80",
+          "alt": "Living area"
+        }
+      ],
+      "agent": {
+        "id": "a2",
+        "name": "Sara Khan",
+        "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b898?w=200&q=80",
+        "agency": "Prime Realty",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-321-2222222",
+        "whatsapp": "923212222222",
+        "email": "sara@primerealty.pk",
+        "verified": true,
+        "rating": 4.9,
+        "reviewCount": 89,
+        "totalListings": 22,
+        "activeSince": "2020-06-15",
+        "bio": "Karachi's top-rated agent specialising in Clifton, Defence, and North Nazimabad residential and commercial properties.",
+        "cities": [
+          "Karachi"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 312,
+      "inquiries": 7,
+      "postedAt": "2026-10-18T10:00:00Z",
+      "updatedAt": "2026-10-27T08:00:00Z"
+    },
+    {
+      "id": "p8",
+      "title": "4 Marla Commercial Plot in Blue Area Islamabad",
+      "slug": "4-marla-commercial-plot-blue-area-islamabad",
+      "purpose": "buy",
+      "type": "plot",
+      "status": "active",
+      "price": 62000000,
+      "area": 4,
+      "areaUnit": "marla",
+      "location": {
+        "city": "Islamabad",
+        "area": "Blue Area",
+        "address": "Jinnah Avenue",
+        "lat": 33.7215,
+        "lng": 73.0608
+      },
+      "description": "Rare 4 Marla commercial plot on Jinnah Avenue, Blue Area — Islamabad's premier commercial district. Suitable for high-rise commercial building, hotel, or corporate offices. Highest ROI potential in the twin cities. Files are clear with full documentation available.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "sewerage"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80",
+          "alt": "Blue Area",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a3",
+        "name": "Usman Malik",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+        "phone": "+92-333-3333333",
+        "whatsapp": "923333333333",
+        "email": "usman.malik@gmail.com",
+        "verified": true,
+        "rating": 4.6,
+        "reviewCount": 56,
+        "totalListings": 14,
+        "activeSince": "2021-01-10",
+        "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+        "cities": [
+          "Rawalpindi",
+          "Islamabad"
+        ]
+      },
+      "featured": true,
+      "premium": true,
+      "verified": true,
+      "views": 1544,
+      "inquiries": 19,
+      "postedAt": "2026-10-03T10:00:00Z",
+      "updatedAt": "2026-10-20T08:00:00Z"
+    },
+    {
+      "id": "p9",
+      "title": "7 Marla House for Sale in Gulshan-e-Iqbal, Karachi",
+      "slug": "7-marla-house-gulshan-iqbal-karachi",
+      "purpose": "buy",
+      "type": "house",
+      "status": "active",
+      "price": 27500000,
+      "area": 7,
+      "areaUnit": "marla",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "floors": 2,
+      "parkingSpaces": 2,
+      "furnished": "unfurnished",
+      "location": {
+        "city": "Karachi",
+        "area": "Gulshan-e-Iqbal",
+        "address": "Block 3, Street 8",
+        "lat": 24.9178,
+        "lng": 67.11
+      },
+      "description": "Spacious 7 Marla double-storey house with a large drawing room, spacious kitchen, and separate servant quarters. Ground floor has a separate rental portion generating PKR 25,000/month. Ideal investment and own residence option.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "security",
+        "parking",
+        "servants",
+        "roof"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80",
+          "alt": "House exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80",
+          "alt": "Living room"
+        }
+      ],
+      "agent": {
+        "id": "a2",
+        "name": "Sara Khan",
+        "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b898?w=200&q=80",
+        "agency": "Prime Realty",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-321-2222222",
+        "whatsapp": "923212222222",
+        "email": "sara@primerealty.pk",
+        "verified": true,
+        "rating": 4.9,
+        "reviewCount": 89,
+        "totalListings": 22,
+        "activeSince": "2020-06-15",
+        "bio": "Karachi's top-rated agent specialising in Clifton, Defence, and North Nazimabad residential and commercial properties.",
+        "cities": [
+          "Karachi"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": false,
+      "priceDrop": 8,
+      "views": 788,
+      "inquiries": 14,
+      "postedAt": "2026-09-28T10:00:00Z",
+      "updatedAt": "2026-10-21T08:00:00Z"
+    },
+    {
+      "id": "p10",
+      "title": "2000 Sqft Office Space for Rent in PECHS Karachi",
+      "slug": "2000sqft-office-rent-pechs-karachi",
+      "purpose": "commercial",
+      "type": "office",
+      "status": "active",
+      "price": 175000,
+      "priceUnit": "per month",
+      "area": 2000,
+      "areaUnit": "sqft",
+      "parkingSpaces": 5,
+      "furnished": "semi-furnished",
+      "location": {
+        "city": "Karachi",
+        "area": "PECHS",
+        "address": "Block 2, Main Shahrah-e-Faisal",
+        "lat": 24.8833,
+        "lng": 67.0641
+      },
+      "description": "Modern office space on the 3rd floor of a commercial building in PECHS. Open floor plan with partition offices, a dedicated boardroom, reception area, and pantry. Fibre internet and PTCL lines available. Building has 24/7 security and CCTV.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "water",
+        "security",
+        "cctv",
+        "lift",
+        "parking"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
+          "alt": "Office interior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80",
+          "alt": "Meeting room"
+        }
+      ],
+      "agent": {
+        "id": "a2",
+        "name": "Sara Khan",
+        "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b898?w=200&q=80",
+        "agency": "Prime Realty",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-321-2222222",
+        "whatsapp": "923212222222",
+        "email": "sara@primerealty.pk",
+        "verified": true,
+        "rating": 4.9,
+        "reviewCount": 89,
+        "totalListings": 22,
+        "activeSince": "2020-06-15",
+        "bio": "Karachi's top-rated agent specialising in Clifton, Defence, and North Nazimabad residential and commercial properties.",
+        "cities": [
+          "Karachi"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 541,
+      "inquiries": 9,
+      "postedAt": "2026-10-14T10:00:00Z",
+      "updatedAt": "2026-10-26T08:00:00Z"
+    },
+    {
+      "id": "p11",
+      "title": "3 Marla House for Sale in Johar Town Lahore",
+      "slug": "3-marla-house-johar-town-lahore",
+      "purpose": "buy",
+      "type": "house",
+      "status": "active",
+      "price": 12500000,
+      "area": 3,
+      "areaUnit": "marla",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floors": 1,
+      "furnished": "unfurnished",
+      "location": {
+        "city": "Lahore",
+        "area": "Johar Town",
+        "address": "Phase 1, Block E2",
+        "lat": 31.47,
+        "lng": 74.27
+      },
+      "description": "Affordable 3 Marla house in a well-established locality. New construction with quality tiles, good-sized rooms, and an open courtyard. Within walking distance to schools, markets, and a mosque. Perfect for first-time home buyers.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "mosque",
+        "school"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1625602812206-5ec545ca1231?w=1200&q=80",
+          "alt": "House exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185127-6e3399b5f524?w=1200&q=80",
+          "alt": "Bedroom"
+        }
+      ],
+      "agent": {
+        "id": "a4",
+        "name": "Fatima Zahra",
+        "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+        "agency": "Skyline Properties",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-311-4444444",
+        "whatsapp": "923114444444",
+        "email": "fatima@skyline.pk",
+        "verified": false,
+        "rating": 4.5,
+        "reviewCount": 33,
+        "totalListings": 9,
+        "activeSince": "2022-09-01",
+        "bio": "Lahore-based specialist in upscale properties in Gulberg, Model Town, and DHA Phase 5–8.",
+        "cities": [
+          "Lahore"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": false,
+      "views": 445,
+      "inquiries": 11,
+      "postedAt": "2026-10-16T10:00:00Z",
+      "updatedAt": "2026-10-24T08:00:00Z"
+    },
+    {
+      "id": "p12",
+      "title": "1000 Sqft Industrial Unit in SITE Hyderabad",
+      "slug": "1000sqft-industrial-unit-site-hyderabad",
+      "purpose": "rent",
+      "type": "industrial",
+      "status": "active",
+      "price": 45000,
+      "priceUnit": "per month",
+      "area": 1000,
+      "areaUnit": "sqft",
+      "location": {
+        "city": "Hyderabad",
+        "area": "SITE",
+        "address": "Industrial Estate Phase 2",
+        "lat": 25.3764,
+        "lng": 68.3664
+      },
+      "description": "Functional industrial unit in SITE Hyderabad. Ideal for light manufacturing, storage, or a small factory. High ceiling, three-phase electricity, loading bay, and dedicated truck parking. Immediate possession available.",
+      "amenities": [
+        "electricity",
+        "water",
+        "security",
+        "parking"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+          "alt": "Industrial unit",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a5",
+        "name": "Bilal Chaudhry",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+        "agency": "Apex Developers",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-315-5555555",
+        "whatsapp": "923155555555",
+        "email": "bilal@apex.pk",
+        "verified": true,
+        "rating": 4.7,
+        "reviewCount": 71,
+        "totalListings": 27,
+        "activeSince": "2019-05-20",
+        "bio": "Commercial property expert with a strong portfolio in Faisalabad, Gujranwala, and Sialkot industrial zones.",
+        "cities": [
+          "Faisalabad",
+          "Gujranwala",
+          "Sialkot"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 213,
+      "inquiries": 4,
+      "postedAt": "2026-10-20T10:00:00Z",
+      "updatedAt": "2026-10-28T08:00:00Z"
+    },
+    {
+      "id": "p13",
+      "title": "5 Marla Residential Plot in DHA Valley Islamabad",
+      "slug": "5-marla-plot-dha-valley-islamabad",
+      "purpose": "buy",
+      "type": "plot",
+      "status": "active",
+      "price": 5500000,
+      "area": 5,
+      "areaUnit": "marla",
+      "location": {
+        "city": "Islamabad",
+        "area": "DHA Valley",
+        "society": "DHA Islamabad",
+        "address": "Sector Jasmine",
+        "lat": 33.5497,
+        "lng": 73.1
+      },
+      "description": "Residential plot in the scenic DHA Valley with views of the Margalla Hills. Fully developed sector with approach roads, underground utilities, and a boundary wall. Possession available. NOC and all legalities in order.",
+      "amenities": [
+        "electricity",
+        "water",
+        "sewerage",
+        "security",
+        "park",
+        "mosque"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80",
+          "alt": "Plot area",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a3",
+        "name": "Usman Malik",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+        "phone": "+92-333-3333333",
+        "whatsapp": "923333333333",
+        "email": "usman.malik@gmail.com",
+        "verified": true,
+        "rating": 4.6,
+        "reviewCount": 56,
+        "totalListings": 14,
+        "activeSince": "2021-01-10",
+        "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+        "cities": [
+          "Rawalpindi",
+          "Islamabad"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 732,
+      "inquiries": 6,
+      "postedAt": "2026-10-08T10:00:00Z",
+      "updatedAt": "2026-10-22T08:00:00Z"
+    },
+    {
+      "id": "p14",
+      "title": "2 Bed Apartment for Rent in Bahria Heights E-11 Islamabad",
+      "slug": "2bed-apartment-rent-bahria-heights-e11-islamabad",
+      "purpose": "rent",
+      "type": "apartment",
+      "status": "active",
+      "price": 65000,
+      "priceUnit": "per month",
+      "area": 1100,
+      "areaUnit": "sqft",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "furnished": "semi-furnished",
+      "location": {
+        "city": "Islamabad",
+        "area": "E-11",
+        "society": "Bahria Heights",
+        "address": "Tower 7, Floor 5",
+        "lat": 33.6844,
+        "lng": 72.982
+      },
+      "description": "Well-maintained 2-bedroom apartment in the sought-after Bahria Heights complex. Semi-furnished with quality kitchen cabinets, wardrobes, and AC units. Building amenities include a gym, community lawn, generator backup, and 24/7 security.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "water",
+        "security",
+        "cctv",
+        "gym",
+        "lift",
+        "parking",
+        "park"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80",
+          "alt": "Living room",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185127-6e3399b5f524?w=1200&q=80",
+          "alt": "Bedroom"
+        }
+      ],
+      "agent": {
+        "id": "a3",
+        "name": "Usman Malik",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+        "phone": "+92-333-3333333",
+        "whatsapp": "923333333333",
+        "email": "usman.malik@gmail.com",
+        "verified": true,
+        "rating": 4.6,
+        "reviewCount": 56,
+        "totalListings": 14,
+        "activeSince": "2021-01-10",
+        "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+        "cities": [
+          "Rawalpindi",
+          "Islamabad"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 498,
+      "inquiries": 13,
+      "postedAt": "2026-10-11T10:00:00Z",
+      "updatedAt": "2026-10-26T08:00:00Z"
+    },
+    {
+      "id": "p15",
+      "title": "10 Marla Corner House in Wapda Town Lahore",
+      "slug": "10-marla-corner-house-wapda-town-lahore",
+      "purpose": "buy",
+      "type": "house",
+      "status": "active",
+      "price": 42000000,
+      "area": 10,
+      "areaUnit": "marla",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "floors": 2,
+      "parkingSpaces": 3,
+      "furnished": "unfurnished",
+      "location": {
+        "city": "Lahore",
+        "area": "Wapda Town",
+        "address": "Phase 1, Block J",
+        "lat": 31.42,
+        "lng": 74.2
+      },
+      "description": "Spacious 10 Marla double-storey corner house in Wapda Town Phase 1. Features a large drawing room, formal dining, separate family lounge, and a beautiful garden. Corner location provides extra light and ventilation. Ready for immediate possession.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "security",
+        "parking",
+        "park",
+        "mosque",
+        "corner"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1200&q=80",
+          "alt": "House exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1200&q=80",
+          "alt": "Living room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
+          "alt": "Kitchen"
+        }
+      ],
+      "agent": {
+        "id": "a1",
+        "name": "Ahmed Raza",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+        "agency": "PropEdge Pakistan",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-300-1111111",
+        "whatsapp": "923001111111",
+        "email": "ahmed@propedge.pk",
+        "verified": true,
+        "rating": 4.8,
+        "reviewCount": 142,
+        "totalListings": 38,
+        "activeSince": "2018-03-01",
+        "bio": "Senior property consultant with 8+ years specializing in DHA and Bahria Town developments across Lahore and Islamabad.",
+        "cities": [
+          "Lahore",
+          "Islamabad"
+        ]
+      },
+      "featured": true,
+      "premium": false,
+      "verified": true,
+      "priceDrop": 3,
+      "views": 1123,
+      "inquiries": 18,
+      "postedAt": "2026-09-25T10:00:00Z",
+      "updatedAt": "2026-10-23T08:00:00Z"
+    },
+    {
+      "id": "p16",
+      "title": "Single Room for Rent in G-10/4 Islamabad",
+      "slug": "single-room-rent-g10-4-islamabad",
+      "purpose": "rent",
+      "type": "room",
+      "status": "active",
+      "price": 12000,
+      "priceUnit": "per month",
+      "area": 250,
+      "areaUnit": "sqft",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "furnished": "furnished",
+      "location": {
+        "city": "Islamabad",
+        "area": "G-10/4",
+        "address": "Street 18",
+        "lat": 33.6939,
+        "lng": 73.0551
+      },
+      "description": "Well-lit furnished room available for professionals or students. Attached bathroom, independent entrance, and includes electricity and wifi. Shared kitchen available. Safe, secure neighbourhood close to public transport.",
+      "amenities": [
+        "electricity",
+        "water",
+        "security"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+          "alt": "Room interior",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a3",
+        "name": "Usman Malik",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+        "phone": "+92-333-3333333",
+        "whatsapp": "923333333333",
+        "email": "usman.malik@gmail.com",
+        "verified": true,
+        "rating": 4.6,
+        "reviewCount": 56,
+        "totalListings": 14,
+        "activeSince": "2021-01-10",
+        "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+        "cities": [
+          "Rawalpindi",
+          "Islamabad"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": false,
+      "views": 189,
+      "inquiries": 5,
+      "postedAt": "2026-10-22T10:00:00Z",
+      "updatedAt": "2026-10-29T08:00:00Z"
+    },
+    {
+      "id": "p17",
+      "title": "Luxury Penthouse in Emaar Canyon Views, Islamabad",
+      "slug": "luxury-penthouse-emaar-canyon-views-islamabad",
+      "purpose": "buy",
+      "type": "apartment",
+      "status": "active",
+      "price": 95000000,
+      "area": 3500,
+      "areaUnit": "sqft",
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "parkingSpaces": 2,
+      "furnished": "semi-furnished",
+      "location": {
+        "city": "Islamabad",
+        "area": "DHA Phase 2",
+        "society": "Emaar Canyon Views",
+        "address": "Tower A, Top Floor",
+        "lat": 33.54,
+        "lng": 72.93
+      },
+      "description": "Once-in-a-lifetime penthouse in Emaar's flagship Canyon Views development. 360-degree panoramic views of the Margalla Hills. Private rooftop terrace with jacuzzi, Italian marble throughout, a chef's island kitchen, and a dedicated staff room. World-class amenities including infinity pool and business lounge.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "water",
+        "security",
+        "cctv",
+        "pool",
+        "gym",
+        "lift",
+        "parking",
+        "roof"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80",
+          "alt": "Penthouse living",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80",
+          "alt": "City views"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200&q=80",
+          "alt": "Rooftop terrace"
+        }
+      ],
+      "agent": {
+        "id": "a1",
+        "name": "Ahmed Raza",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+        "agency": "PropEdge Pakistan",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-300-1111111",
+        "whatsapp": "923001111111",
+        "email": "ahmed@propedge.pk",
+        "verified": true,
+        "rating": 4.8,
+        "reviewCount": 142,
+        "totalListings": 38,
+        "activeSince": "2018-03-01",
+        "bio": "Senior property consultant with 8+ years specializing in DHA and Bahria Town developments across Lahore and Islamabad.",
+        "cities": [
+          "Lahore",
+          "Islamabad"
+        ]
+      },
+      "featured": true,
+      "premium": true,
+      "verified": true,
+      "views": 4123,
+      "inquiries": 67,
+      "postedAt": "2026-09-10T10:00:00Z",
+      "updatedAt": "2026-10-28T08:00:00Z"
+    },
+    {
+      "id": "p18",
+      "title": "20 Marla Boulevard Plot in Bahria Town Phase 8 Rawalpindi",
+      "slug": "20-marla-boulevard-plot-bahria-phase8-rawalpindi",
+      "purpose": "buy",
+      "type": "plot",
+      "status": "active",
+      "price": 22000000,
+      "area": 20,
+      "areaUnit": "marla",
+      "location": {
+        "city": "Rawalpindi",
+        "area": "Bahria Town Phase 8",
+        "society": "Bahria Town",
+        "address": "Rafi Block",
+        "lat": 33.5,
+        "lng": 72.97
+      },
+      "description": "Excellent opportunity to own a 20 Marla boulevard-facing plot in the highly coveted Rafi Block. Double road, ideal for double-unit construction or a palatial bungalow. Fully developed with all civic amenities. Prime location near Bahria Grand Mosque.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water",
+        "sewerage",
+        "security",
+        "mosque",
+        "school",
+        "hospital",
+        "park",
+        "boulevard"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&q=80",
+          "alt": "Plot location",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a3",
+        "name": "Usman Malik",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+        "phone": "+92-333-3333333",
+        "whatsapp": "923333333333",
+        "email": "usman.malik@gmail.com",
+        "verified": true,
+        "rating": 4.6,
+        "reviewCount": 56,
+        "totalListings": 14,
+        "activeSince": "2021-01-10",
+        "bio": "Independent dealer focused on affordable housing in Rawalpindi and Islamabad. Expert in new project launches.",
+        "cities": [
+          "Rawalpindi",
+          "Islamabad"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 876,
+      "inquiries": 11,
+      "postedAt": "2026-10-02T10:00:00Z",
+      "updatedAt": "2026-10-20T08:00:00Z"
+    },
+    {
+      "id": "p19",
+      "title": "4 Bed House for Rent in DHA Phase 6 Karachi",
+      "slug": "4bed-house-rent-dha-phase6-karachi",
+      "purpose": "rent",
+      "type": "house",
+      "status": "active",
+      "price": 120000,
+      "priceUnit": "per month",
+      "area": 400,
+      "areaUnit": "sqft",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "parkingSpaces": 2,
+      "furnished": "semi-furnished",
+      "location": {
+        "city": "Karachi",
+        "area": "DHA Phase 6",
+        "address": "Zamzama Boulevard",
+        "lat": 24.8121,
+        "lng": 67.0314
+      },
+      "description": "Elegant house in the sought-after DHA Phase 6, just minutes from Zamzama commercial area. Semi-furnished with kitchen cabinets, lights, and air conditioners. Covered garage, servant quarters, and a large lawn. Ideal for corporate executives.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "gas",
+        "water",
+        "security",
+        "cctv",
+        "parking",
+        "servants",
+        "park"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
+          "alt": "House exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80",
+          "alt": "Living room"
+        }
+      ],
+      "agent": {
+        "id": "a2",
+        "name": "Sara Khan",
+        "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b898?w=200&q=80",
+        "agency": "Prime Realty",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-321-2222222",
+        "whatsapp": "923212222222",
+        "email": "sara@primerealty.pk",
+        "verified": true,
+        "rating": 4.9,
+        "reviewCount": 89,
+        "totalListings": 22,
+        "activeSince": "2020-06-15",
+        "bio": "Karachi's top-rated agent specialising in Clifton, Defence, and North Nazimabad residential and commercial properties.",
+        "cities": [
+          "Karachi"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 634,
+      "inquiries": 16,
+      "postedAt": "2026-10-09T10:00:00Z",
+      "updatedAt": "2026-10-27T08:00:00Z"
+    },
+    {
+      "id": "p20",
+      "title": "3 Marla Upper Portion for Rent in Gulberg II Lahore",
+      "slug": "3-marla-upper-portion-rent-gulberg2-lahore",
+      "purpose": "rent",
+      "type": "room",
+      "status": "active",
+      "price": 22000,
+      "priceUnit": "per month",
+      "area": 3,
+      "areaUnit": "marla",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "furnished": "unfurnished",
+      "location": {
+        "city": "Lahore",
+        "area": "Gulberg II",
+        "address": "Main Market Lane 3",
+        "lat": 31.502,
+        "lng": 74.34
+      },
+      "description": "Spacious upper portion with 2 bedrooms, a drawing room, and a kitchen. Separate gas and electricity meters. Independent entrance. Ground floor owners are a decent family. Ideal for small families or couples.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "water"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80",
+          "alt": "Living area",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a4",
+        "name": "Fatima Zahra",
+        "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+        "agency": "Skyline Properties",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-311-4444444",
+        "whatsapp": "923114444444",
+        "email": "fatima@skyline.pk",
+        "verified": false,
+        "rating": 4.5,
+        "reviewCount": 33,
+        "totalListings": 9,
+        "activeSince": "2022-09-01",
+        "bio": "Lahore-based specialist in upscale properties in Gulberg, Model Town, and DHA Phase 5–8.",
+        "cities": [
+          "Lahore"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": false,
+      "views": 234,
+      "inquiries": 9,
+      "postedAt": "2026-10-19T10:00:00Z",
+      "updatedAt": "2026-10-27T08:00:00Z"
+    },
+    {
+      "id": "p21",
+      "title": "Roshan Digital Account Eligible Plot in Capital Smart City",
+      "slug": "rda-plot-capital-smart-city-islamabad",
+      "purpose": "buy",
+      "type": "plot",
+      "status": "active",
+      "price": 9500000,
+      "area": 7,
+      "areaUnit": "marla",
+      "location": {
+        "city": "Islamabad",
+        "area": "Capital Smart City",
+        "society": "Capital Smart City",
+        "address": "Overseas Prime Block",
+        "lat": 33.5673,
+        "lng": 72.86
+      },
+      "description": "Roshan Digital Account (RDA) eligible 7 Marla plot in the Overseas Prime Block of Capital Smart City. Smart city infrastructure including self-driving lanes, smart street lighting, and solar energy integration. Ideal for overseas Pakistanis.",
+      "amenities": [
+        "electricity",
+        "water",
+        "sewerage",
+        "security",
+        "park",
+        "mosque",
+        "school",
+        "hospital"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1200&q=80",
+          "alt": "Smart city development",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a1",
+        "name": "Ahmed Raza",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+        "agency": "PropEdge Pakistan",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-300-1111111",
+        "whatsapp": "923001111111",
+        "email": "ahmed@propedge.pk",
+        "verified": true,
+        "rating": 4.8,
+        "reviewCount": 142,
+        "totalListings": 38,
+        "activeSince": "2018-03-01",
+        "bio": "Senior property consultant with 8+ years specializing in DHA and Bahria Town developments across Lahore and Islamabad.",
+        "cities": [
+          "Lahore",
+          "Islamabad"
+        ]
+      },
+      "featured": true,
+      "premium": false,
+      "verified": true,
+      "views": 1987,
+      "inquiries": 32,
+      "postedAt": "2026-09-30T10:00:00Z",
+      "updatedAt": "2026-10-25T08:00:00Z"
+    },
+    {
+      "id": "p22",
+      "title": "2 Kanal Luxury Villa in Bahria Town Lahore",
+      "slug": "2-kanal-luxury-villa-bahria-town-lahore",
+      "purpose": "buy",
+      "type": "house",
+      "status": "active",
+      "price": 115000000,
+      "area": 2,
+      "areaUnit": "kanal",
+      "bedrooms": 7,
+      "bathrooms": 8,
+      "floors": 2,
+      "parkingSpaces": 6,
+      "furnished": "unfurnished",
+      "location": {
+        "city": "Lahore",
+        "area": "Bahria Town",
+        "society": "Bahria Town Lahore",
+        "address": "Sector F, Jasmine Block",
+        "lat": 31.362,
+        "lng": 74.154
+      },
+      "description": "Grand 2 Kanal villa in Bahria Town's premium Jasmine Block. Italian marble throughout, a state-of-the-art kitchen, home cinema, indoor swimming pool, and sprawling gardens. The estate includes 3 separate entrance gates and accommodation for 2 drivers and house staff.",
+      "amenities": [
+        "electricity",
+        "gas",
+        "generator",
+        "water",
+        "security",
+        "cctv",
+        "pool",
+        "gym",
+        "parking",
+        "servants",
+        "park",
+        "mosque"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80",
+          "alt": "Villa exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80",
+          "alt": "Interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=1200&q=80",
+          "alt": "Garden"
+        }
+      ],
+      "agent": {
+        "id": "a1",
+        "name": "Ahmed Raza",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+        "agency": "PropEdge Pakistan",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-300-1111111",
+        "whatsapp": "923001111111",
+        "email": "ahmed@propedge.pk",
+        "verified": true,
+        "rating": 4.8,
+        "reviewCount": 142,
+        "totalListings": 38,
+        "activeSince": "2018-03-01",
+        "bio": "Senior property consultant with 8+ years specializing in DHA and Bahria Town developments across Lahore and Islamabad.",
+        "cities": [
+          "Lahore",
+          "Islamabad"
+        ]
+      },
+      "featured": true,
+      "premium": true,
+      "verified": true,
+      "views": 5211,
+      "inquiries": 88,
+      "postedAt": "2026-09-05T10:00:00Z",
+      "updatedAt": "2026-10-28T08:00:00Z"
+    },
+    {
+      "id": "p23",
+      "title": "Lower Ground Commercial Shops in Packages Mall Lahore",
+      "slug": "shops-packages-mall-lahore",
+      "purpose": "buy",
+      "type": "shop",
+      "status": "active",
+      "price": 18500000,
+      "area": 350,
+      "areaUnit": "sqft",
+      "location": {
+        "city": "Lahore",
+        "area": "Walton Road",
+        "address": "Packages Mall LG Floor",
+        "lat": 31.5074,
+        "lng": 74.3595
+      },
+      "description": "Investment opportunity — lower ground commercial shops in Packages Mall, one of Lahore's premier retail destinations. High footfall guaranteed. All shops are bare-shell; tenant fit-out allowance available. Mall currently operational. Ideal for F&B or retail brands.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "water",
+        "security",
+        "cctv",
+        "lift",
+        "parking"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80",
+          "alt": "Mall interior",
+          "isPrimary": true
+        }
+      ],
+      "agent": {
+        "id": "a5",
+        "name": "Bilal Chaudhry",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+        "agency": "Apex Developers",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-315-5555555",
+        "whatsapp": "923155555555",
+        "email": "bilal@apex.pk",
+        "verified": true,
+        "rating": 4.7,
+        "reviewCount": 71,
+        "totalListings": 27,
+        "activeSince": "2019-05-20",
+        "bio": "Commercial property expert with a strong portfolio in Faisalabad, Gujranwala, and Sialkot industrial zones.",
+        "cities": [
+          "Faisalabad",
+          "Gujranwala",
+          "Sialkot"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 654,
+      "inquiries": 7,
+      "postedAt": "2026-10-06T10:00:00Z",
+      "updatedAt": "2026-10-21T08:00:00Z"
+    },
+    {
+      "id": "p24",
+      "title": "3 Bed Semi-Furnished Apartment in Defence Residency Faisalabad",
+      "slug": "3bed-apartment-defence-residency-faisalabad",
+      "purpose": "buy",
+      "type": "apartment",
+      "status": "active",
+      "price": 19500000,
+      "area": 1450,
+      "areaUnit": "sqft",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpaces": 1,
+      "furnished": "semi-furnished",
+      "location": {
+        "city": "Faisalabad",
+        "area": "Defence Road",
+        "society": "Defence Residency",
+        "address": "Tower B, Floor 7",
+        "lat": 31.4177,
+        "lng": 73.079
+      },
+      "description": "Premium apartment in Faisalabad's new Defence Residency — a mega housing project offering a lifestyle previously unavailable in the city. Features a club, pool, food street, and jogging tracks. Semi-furnished with kitchen cabinets and wardrobes. Ideal for young families.",
+      "amenities": [
+        "electricity",
+        "generator",
+        "gas",
+        "water",
+        "security",
+        "cctv",
+        "pool",
+        "gym",
+        "lift",
+        "parking",
+        "park"
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=1200&q=80",
+          "alt": "Apartment exterior",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&q=80",
+          "alt": "Living room"
+        }
+      ],
+      "agent": {
+        "id": "a5",
+        "name": "Bilal Chaudhry",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+        "agency": "Apex Developers",
+        "agencyLogo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&q=80",
+        "phone": "+92-315-5555555",
+        "whatsapp": "923155555555",
+        "email": "bilal@apex.pk",
+        "verified": true,
+        "rating": 4.7,
+        "reviewCount": 71,
+        "totalListings": 27,
+        "activeSince": "2019-05-20",
+        "bio": "Commercial property expert with a strong portfolio in Faisalabad, Gujranwala, and Sialkot industrial zones.",
+        "cities": [
+          "Faisalabad",
+          "Gujranwala",
+          "Sialkot"
+        ]
+      },
+      "featured": false,
+      "premium": false,
+      "verified": true,
+      "views": 412,
+      "inquiries": 6,
+      "postedAt": "2026-10-17T10:00:00Z",
+      "updatedAt": "2026-10-27T08:00:00Z"
+    }
+  ],
+  "cities": [
+    {
+      "id": "c1",
+      "name": "Karachi",
+      "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80",
+      "listings": 4820,
+      "slug": "karachi"
+    },
+    {
+      "id": "c2",
+      "name": "Lahore",
+      "image": "https://images.unsplash.com/photo-1562883676-8c7feb83f09b?w=600&q=80",
+      "listings": 6230,
+      "slug": "lahore"
+    },
+    {
+      "id": "c3",
+      "name": "Islamabad",
+      "image": "https://images.unsplash.com/photo-1580502304784-8985b7eb7260?w=600&q=80",
+      "listings": 3140,
+      "slug": "islamabad"
+    },
+    {
+      "id": "c4",
+      "name": "Rawalpindi",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80",
+      "listings": 1870,
+      "slug": "rawalpindi"
+    },
+    {
+      "id": "c5",
+      "name": "Faisalabad",
+      "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=600&q=80",
+      "listings": 1420,
+      "slug": "faisalabad"
+    },
+    {
+      "id": "c6",
+      "name": "Multan",
+      "image": "https://images.unsplash.com/photo-1598153346810-860daa814c4b?w=600&q=80",
+      "listings": 820,
+      "slug": "multan"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "b1",
+      "title": "Top 10 Societies to Invest in Lahore in 2026",
+      "slug": "top-10-societies-invest-lahore-2026",
+      "excerpt": "Our analysts rank the best real estate investment opportunities in Lahore based on infrastructure, appreciation potential, and developer credibility.",
+      "content": "",
+      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
+      "author": "Ahmed Raza",
+      "category": "Investment",
+      "publishedAt": "2026-10-15T10:00:00Z",
+      "readTime": 7
+    },
+    {
+      "id": "b2",
+      "title": "The Complete Guide to Buying Property in Pakistan as an Overseas Pakistani",
+      "slug": "complete-guide-buying-property-overseas-pakistani",
+      "excerpt": "Everything you need to know about Roshan Digital Accounts, RDA, legal documentation, and how to avoid common pitfalls when buying remotely.",
+      "content": "",
+      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&q=80",
+      "author": "Sara Khan",
+      "category": "Guide",
+      "publishedAt": "2026-10-08T10:00:00Z",
+      "readTime": 12
+    },
+    {
+      "id": "b3",
+      "title": "DHA vs Bahria Town: Which is a Better Investment in 2026?",
+      "slug": "dha-vs-bahria-town-investment-2026",
+      "excerpt": "A head-to-head comparison of Pakistan's two most popular housing societies covering price trends, amenities, security, and ROI potential.",
+      "content": "",
+      "image": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80",
+      "author": "Bilal Chaudhry",
+      "category": "Analysis",
+      "publishedAt": "2026-09-28T10:00:00Z",
+      "readTime": 9
+    }
+  ]
+}
