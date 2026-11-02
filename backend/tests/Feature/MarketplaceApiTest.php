@@ -10,6 +10,23 @@ class MarketplaceApiTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function test_health_check_reports_the_active_database_connection(): void
+    {
+        $this->getJson('/api/health')
+            ->assertOk()
+            ->assertExactJson(['status' => 'ok', 'database' => 'sqlite']);
+    }
+
+    public function test_api_allows_the_production_frontend_origin(): void
+    {
+        $this->withHeaders([
+            'Origin' => 'https://makaanmart.vercel.app',
+            'Access-Control-Request-Method' => 'GET',
+        ])->options('/api/health')
+            ->assertNoContent()
+            ->assertHeader('Access-Control-Allow-Origin', 'https://makaanmart.vercel.app');
+    }
+
     public function test_seeded_properties_are_returned_with_frontend_shape(): void
     {
         $this->seed();

@@ -1,6 +1,6 @@
 # MakaanMart API
 
-Laravel 12 REST API for the MakaanMart React frontend. It uses MySQL and Sanctum bearer tokens.
+Laravel 12 REST API for the MakaanMart React frontend. It supports MySQL locally and PostgreSQL on Render, and uses Sanctum bearer tokens.
 
 ## Requirements
 
@@ -26,3 +26,9 @@ To run only the API, use `npm start`. The API health check is available at `/api
 The API keeps the existing frontend paths for authentication, listings, seller workflows, inquiries, favorites, saved searches, administration, agents, cities, and blog posts. New listing submissions start as `pending` and require administrator approval before becoming public.
 
 To create an administrator, configure `ADMIN_EMAIL` and `ADMIN_PASSWORD` before seeding. No default administrator password is provided.
+
+## Render deployment
+
+The repository root contains a Render Blueprint that deploys this API with PostgreSQL. Apply it in Render using the connected GitHub repository. The Docker image migrates the database and runs `DatabaseSeeder` before starting Laravel; this seeds the existing sample listings. The API health check is `/api/health`.
+
+The Blueprint is configured for free resources. Free web services can sleep when idle, and free database availability and retention are subject to Render's current limits; use a persistent database plan for real customer data. Set `CORS_ALLOWED_ORIGINS` to the exact frontend origins when changing deployment domains.

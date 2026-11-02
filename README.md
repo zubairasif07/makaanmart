@@ -1,6 +1,6 @@
 # MakaanMart
 
-MakaanMart is a real-estate marketplace built with React, TypeScript, and Vite, backed by a Laravel 12 REST API and MySQL.
+MakaanMart is a real-estate marketplace built with React, TypeScript, and Vite, backed by a Laravel 12 REST API and a database.
 
 ## Requirements
 
@@ -44,3 +44,14 @@ php artisan test --working-dir=backend
 ```
 
 See [backend setup and API notes](backend/README.md) and [frontend notes](frontend/README.md).
+
+## Production deployment
+
+The Vercel project serves the frontend from the `frontend` directory. The Laravel API and its database must be deployed separately. A Render Blueprint is provided in [`render.yaml`](./render.yaml); it creates a free web service and PostgreSQL database, runs migrations and seeds the sample properties at startup, and enables the production Vercel origin for API requests.
+
+1. In Render, create a new Blueprint from this GitHub repository and apply `render.yaml`.
+2. Wait for the `makaanmart-api` service to become healthy. Its health endpoint is `/api/health`.
+3. In the Vercel project settings, add `VITE_API_URL` for Production and Preview, using the API URL plus `/api` (for example, `https://makaanmart-api.onrender.com/api`).
+4. Redeploy the Vercel project so the frontend build uses the API URL.
+
+The Render free web service may sleep when idle, and free database availability and retention are subject to Render's current limits. Upgrade to a persistent database plan before relying on this deployment for real customer data. The seeded listings are sample content, not verified offers.

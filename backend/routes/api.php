@@ -4,9 +4,14 @@ use App\Http\Controllers\Api\AdminController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\MarketplaceController;
 use App\Http\Controllers\Api\PropertyController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/health', fn () => response()->json(['status' => 'ok', 'database' => 'mysql']));
+Route::get('/health', function () {
+    DB::connection()->getPdo();
+
+    return response()->json(['status' => 'ok', 'database' => config('database.default')]);
+});
 Route::get('/stats', [MarketplaceController::class, 'stats']);
 
 Route::middleware('throttle:20,15')->group(function (): void {
