@@ -55,3 +55,5 @@ The Vercel project serves the frontend from the `frontend` directory. The Larave
 4. Redeploy the Vercel project so the frontend build uses the API URL.
 
 The Render free web service may sleep when idle, and free database availability and retention are subject to Render's current limits. Upgrade to a persistent database plan before relying on this deployment for real customer data. The seeded listings are sample content, not verified offers.
+
+If no `VITE_API_URL` is configured, production builds use the frontend's built-in sample listings and remain browsable without a backend. These sample listings are labeled in the UI, and their contact details and inquiries are disabled. Configure `VITE_API_URL` to switch the production frontend to the Laravel API.

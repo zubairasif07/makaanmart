@@ -10,6 +10,7 @@ import { formatPrice, formatArea, timeAgo, whatsappUrl, cn } from '@/utils';
 import { Badge, Avatar, StarRating } from '@/components/ui';
 import { useFavorites } from '@/context/FavoritesContext';
 import { useCompare } from '@/hooks';
+import { IS_DEMO_MODE } from '@/config/runtime';
 
 interface PropertyCardProps {
   property: Property;
@@ -49,8 +50,9 @@ export default function PropertyCard({ property, view = 'grid' }: PropertyCardPr
             loading="lazy"
           />
           <div className="absolute top-3 left-3 flex gap-1.5 flex-wrap">
+            {IS_DEMO_MODE && <Badge variant="secondary">Sample</Badge>}
             {property.featured && <Badge variant="featured">⭐ Featured</Badge>}
-            {property.verified && <Badge variant="verified"><BadgeCheck className="w-3 h-3" /> Verified</Badge>}
+            {!IS_DEMO_MODE && property.verified && <Badge variant="verified"><BadgeCheck className="w-3 h-3" /> Verified</Badge>}
             {property.priceDrop && <Badge variant="priceDrop"><TrendingDown className="w-3 h-3" /> {property.priceDrop}% Drop</Badge>}
           </div>
         </Link>
@@ -150,9 +152,10 @@ export default function PropertyCard({ property, view = 'grid' }: PropertyCardPr
 
         {/* Badges */}
         <div className="absolute top-3 left-3 flex gap-1.5 flex-wrap">
+          {IS_DEMO_MODE && <Badge variant="secondary">Sample</Badge>}
           {property.premium && <Badge variant="premium">✦ Premium</Badge>}
           {property.featured && !property.premium && <Badge variant="featured">⭐ Featured</Badge>}
-          {property.verified && <Badge variant="verified"><BadgeCheck className="w-3 h-3" /> Verified</Badge>}
+          {!IS_DEMO_MODE && property.verified && <Badge variant="verified"><BadgeCheck className="w-3 h-3" /> Verified</Badge>}
         </div>
 
         {property.priceDrop && (

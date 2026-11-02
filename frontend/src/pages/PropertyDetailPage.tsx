@@ -21,6 +21,7 @@ import PropertyCard from '@/components/property/PropertyCard';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { IS_DEMO_MODE } from '@/config/runtime';
 
 // ─── Image Lightbox ───────────────────────────────────────────────────────────
 function ImageGallery({ images, title }: { images: { url: string; alt: string }[]; title: string }) {
@@ -161,13 +162,13 @@ function ContactCard({ property }: { property: Property }) {
           <div>
             <div className="flex items-center gap-1.5">
               <p className="font-bold text-navy-900 dark:text-white">{property.agent.name}</p>
-              {property.agent.verified && <BadgeCheck className="w-4 h-4 text-emerald-500" />}
+              {!IS_DEMO_MODE && property.agent.verified && <BadgeCheck className="w-4 h-4 text-emerald-500" />}
             </div>
             <p className="text-xs text-gray-500">{property.agent.agency ?? 'Independent Dealer'}</p>
             <StarRating rating={property.agent.rating} />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-2">
+        {!IS_DEMO_MODE ? <div className="grid grid-cols-3 gap-2">
           <a
             href={`tel:${property.agent.phone}`}
             className="flex flex-col items-center gap-1 p-2 rounded-xl bg-navy-900 text-white hover:bg-navy-800 transition-colors text-center"
@@ -191,7 +192,7 @@ function ContactCard({ property }: { property: Property }) {
             <Mail className="w-4 h-4" />
             <span className="text-xs font-semibold">Email</span>
           </a>
-        </div>
+        </div> : <p className="rounded-lg bg-amber-50 p-3 text-xs text-amber-800">Sample contact details are not real. Inquiries are disabled in demo mode.</p>}
       </div>
 
       {/* Form */}
@@ -205,7 +206,9 @@ function ContactCard({ property }: { property: Property }) {
             <p className="text-sm text-gray-500 mt-1">The agent will contact you shortly.</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+          IS_DEMO_MODE ? (
+            <p className="text-sm text-gray-500">Sample listings cannot receive inquiries.</p>
+          ) : <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
             {submitError && <p role="alert" className="rounded-xl bg-red-50 p-3 text-sm text-red-600">{submitError}</p>}
             <div className="flex gap-2 mb-2">
               {(['inquiry', 'viewing'] as const).map((t) => (
@@ -337,7 +340,7 @@ export default function PropertyDetailPage() {
             <div className="flex flex-wrap gap-2 mb-2">
               {property.premium && <Badge variant="premium">✦ Premium</Badge>}
               {property.featured && <Badge variant="featured">⭐ Featured</Badge>}
-              {property.verified && <Badge variant="verified"><BadgeCheck className="w-3 h-3" /> Verified</Badge>}
+              {!IS_DEMO_MODE && property.verified && <Badge variant="verified"><BadgeCheck className="w-3 h-3" /> Verified</Badge>}
               {property.priceDrop && <Badge variant="priceDrop"><TrendingDown className="w-3 h-3" /> {property.priceDrop}% Price Drop</Badge>}
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-navy-900 dark:text-white mb-2 leading-tight">
