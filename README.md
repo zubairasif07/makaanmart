@@ -47,7 +47,9 @@ See [backend setup and API notes](backend/README.md) and [frontend notes](fronte
 
 ## Production deployment
 
-The Vercel project serves the frontend from the `frontend` directory. The Laravel API and its database must be deployed separately. A Render Blueprint is provided in [`render.yaml`](./render.yaml); it creates a free web service and PostgreSQL database, runs migrations, and enables the production Vercel origin for API requests.
+The existing Vercel project serves the frontend from the `frontend` directory. The Laravel API and its database must be deployed separately. To host the API on Vercel, create a second Vercel project with the root directory set to `backend`; it uses Vercel's Container Runtime (currently Beta) and needs external PostgreSQL and Cloudinary image storage. See [backend deployment instructions](backend/README.md).
+
+A Render Blueprint is also provided in [`render.yaml`](./render.yaml); it creates a free web service and PostgreSQL database, runs migrations, and enables the production Vercel origin for API requests.
 
 1. In Render, create a new Blueprint from this GitHub repository and apply `render.yaml`.
 2. Wait for the `makaanmart-api` service to become healthy. Its health endpoint is `/api/health`.

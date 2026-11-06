@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
@@ -335,16 +337,65 @@ class PropertyController extends Controller
             'images' => ['required', 'array', 'min:1', 'max:20'],
             'images.*' => ['required', 'image', 'mimes:jpeg,png,webp,avif', 'max:8192'],
         ]);
-        $directory = public_path('uploads');
-        if (! is_dir($directory) && ! mkdir($directory, 0755, true) && ! is_dir($directory)) {
-            throw new \RuntimeException('The upload directory could not be created.');
+
+        $cloudName = config('services.cloudinary.cloud_name');
+        $apiKey = config('services.cloudinary.api_key');
+        $apiSecret = config('services.cloudinary.api_secret');
+        $urls = [];
+        if (! $cloudName || ! $apiKey || ! $apiSecret) {
+            if (app()->isLocal()) {
+                $directory = public_path('uploads');
+                if (! is_dir($directory) && ! mkdir($directory, 0755, true) && ! is_dir($directory)) {
+                    throw new \RuntimeException('The local upload directory could not be created.');
+                }
+
+                foreach ($data['images'] as $image) {
+                    $filename = Str::uuid().'.'.$image->extension();
+                    $image->move($directory, $filename);
+                    $urls[] = $request->getSchemeAndHttpHost().'/uploads/'.rawurlencode($filename);
+                }
+
+                return response()->json(['images' => $urls], 201);
+            }
+
+            return response()->json(['error' => 'Image storage is not configured.'], 503);
         }
 
-        $urls = [];
         foreach ($data['images'] as $image) {
-            $filename = Str::uuid().'.'.$image->extension();
-            $image->move($directory, $filename);
-            $urls[] = $request->getSchemeAndHttpHost().'/uploads/'.rawurlencode($filename);
+            $parameters = [
+                'folder' => config('services.cloudinary.folder'),
+                'public_id' => (string) Str::uuid(),
+                'timestamp' => now()->timestamp,
+            ];
+            ksort($parameters);
+            $signature = sha1(collect($parameters)
+                ->map(fn (string|int $value, string $key): string => $key.'='.$value)
+                ->implode('&').$apiSecret);
+
+            try {
+                $response = Http::timeout(30)
+                    ->attach('file', file_get_contents($image->getRealPath()), $image->getClientOriginalName())
+                    ->post("https://api.cloudinary.com/v1_1/{$cloudName}/image/upload", [
+                        ...$parameters,
+                        'api_key' => $apiKey,
+                        'signature' => $signature,
+                    ]);
+            } catch (\Illuminate\Http\Client\ConnectionException $exception) {
+                Log::warning('Cloudinary image upload could not connect.', ['message' => $exception->getMessage()]);
+
+                return response()->json(['error' => 'Image storage is temporarily unavailable.'], 502);
+            }
+
+            if (! $response->successful() || ! is_string($response->json('secure_url'))) {
+                Log::warning('Cloudinary image upload failed.', [
+                    'status' => $response->status(),
+                    'response' => $response->body(),
+                ]);
+
+                return response()->json(['error' => 'Image storage rejected the upload.'], 502);
+            }
+
+            $urls[] = $response->json('secure_url');
         }
 
         return response()->json(['images' => $urls], 201);
