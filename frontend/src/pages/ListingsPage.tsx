@@ -243,7 +243,7 @@ export default function ListingsPage() {
               <EmptyState
                 icon={<Grid3X3 className="w-16 h-16" />}
                 title="No properties found"
-                description="Try adjusting your filters or search in a different area."
+                description="No active listings are available yet. Seller listings will appear here after they are submitted and approved."
                 action={<Button variant="emerald" onClick={handleReset}>Clear All Filters</Button>}
               />
             ) : (

@@ -1,10 +1,10 @@
 import type {
   Agent, BlogPost, City, Inquiry, Property, SearchFilters, User,
 } from '@/types';
-import { mockAgents, mockBlogPosts, mockCities, mockProperties } from '@/data/mockData';
-import { API_URL, IS_DEMO_MODE } from '@/config/runtime';
+import { mockBlogPosts } from '@/data/mockData';
+import { API_URL, IS_API_UNCONFIGURED } from '@/config/runtime';
 
-export { IS_DEMO_MODE } from '@/config/runtime';
+export { IS_API_UNCONFIGURED } from '@/config/runtime';
 
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   const headers = new Headers(options.headers);
@@ -36,72 +36,13 @@ function queryString(params: Record<string, string | number | boolean | undefine
   return search.size ? `?${search.toString()}` : '';
 }
 
-function getDemoProperties(filters: SearchFilters): Property[] {
-  const query = filters.query?.trim().toLowerCase();
-  const amenities = filters.amenities ?? [];
-
-  return mockProperties.filter((property) => {
-    if (property.status !== 'active') return false;
-    if (filters.featured && !property.featured) return false;
-    if (filters.purpose && property.purpose !== filters.purpose) return false;
-    if (filters.type && property.type !== filters.type) return false;
-    if (filters.city && property.location.city.toLowerCase() !== filters.city.toLowerCase()) return false;
-    if (filters.area && !property.location.area.toLowerCase().includes(filters.area.toLowerCase())) return false;
-    if (filters.minPrice !== undefined && property.price < filters.minPrice) return false;
-    if (filters.maxPrice !== undefined && property.price > filters.maxPrice) return false;
-    if (filters.minBeds !== undefined && (property.bedrooms ?? 0) < filters.minBeds) return false;
-    if (filters.maxBeds !== undefined && (property.bedrooms ?? 0) > filters.maxBeds) return false;
-    if (filters.minBaths !== undefined && (property.bathrooms ?? 0) < filters.minBaths) return false;
-    if (filters.minArea !== undefined && property.area < filters.minArea) return false;
-    if (filters.maxArea !== undefined && property.area > filters.maxArea) return false;
-    if (filters.areaUnit && property.areaUnit !== filters.areaUnit) return false;
-    if (filters.furnished && property.furnished !== filters.furnished) return false;
-    if (amenities.some((amenity) => !property.amenities.includes(amenity))) return false;
-    if (filters.postedWithin !== undefined) {
-      const cutoff = Date.now() - filters.postedWithin * 24 * 60 * 60 * 1000;
-      if (new Date(property.postedAt).getTime() < cutoff) return false;
-    }
-
-    if (query) {
-      const searchableText = [
-        property.title,
-        property.description,
-        property.location.city,
-        property.location.area,
-        property.location.society,
-        property.location.address,
-        property.type,
-      ].join(' ').toLowerCase();
-      if (!query.split(/\s+/).every((term) => searchableText.includes(term))) return false;
-    }
-
-    return true;
-  }).sort((a, b) => {
-    switch (filters.sortBy) {
-      case 'price-asc':
-        return a.price - b.price;
-      case 'price-desc':
-        return b.price - a.price;
-      case 'popular':
-        return b.views - a.views;
-      default:
-        return new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime();
-    }
-  });
-}
-
 export async function getProperties(filters: SearchFilters = {}, page = 1, limit = 12) {
-  if (IS_DEMO_MODE) {
-    const properties = getDemoProperties(filters);
-    const safeLimit = Math.max(1, limit);
-    const safePage = Math.max(1, page);
-    const total = properties.length;
-
+  if (IS_API_UNCONFIGURED) {
     return {
-      data: properties.slice((safePage - 1) * safeLimit, safePage * safeLimit),
-      total,
-      page: safePage,
-      totalPages: Math.ceil(total / safeLimit),
+      data: [],
+      total: 0,
+      page,
+      totalPages: 0,
     };
   }
 
@@ -132,9 +73,7 @@ export async function getProperties(filters: SearchFilters = {}, page = 1, limit
 }
 
 export async function getPropertyBySlug(slug: string): Promise<Property | null> {
-  if (IS_DEMO_MODE) {
-    return mockProperties.find((property) => property.slug === slug && property.status === 'active') ?? null;
-  }
+  if (IS_API_UNCONFIGURED) return null;
 
   try {
     return await request<Property>(`/properties/slug/${encodeURIComponent(slug)}`);
@@ -145,9 +84,7 @@ export async function getPropertyBySlug(slug: string): Promise<Property | null> 
 }
 
 export async function getPropertyById(id: string): Promise<Property | null> {
-  if (IS_DEMO_MODE) {
-    return mockProperties.find((property) => property.id === id && property.status === 'active') ?? null;
-  }
+  if (IS_API_UNCONFIGURED) return null;
 
   try {
     return await request<Property>(`/properties/id/${encodeURIComponent(id)}`);
@@ -158,29 +95,19 @@ export async function getPropertyById(id: string): Promise<Property | null> {
 }
 
 export function getFeaturedProperties(): Promise<Property[]> {
-  if (IS_DEMO_MODE) {
-    return Promise.resolve(getDemoProperties({ featured: true }).slice(0, 6));
-  }
+  if (IS_API_UNCONFIGURED) return Promise.resolve([]);
 
   return request('/properties/featured');
 }
 
 export function getLatestProperties(limit = 8): Promise<Property[]> {
-  if (IS_DEMO_MODE) {
-    return Promise.resolve(getDemoProperties({}).slice(0, limit));
-  }
+  if (IS_API_UNCONFIGURED) return Promise.resolve([]);
 
   return request(`/properties/latest${queryString({ limit })}`);
 }
 
 export function getSimilarProperties(property: Property, _limit = 4): Promise<Property[]> {
-  if (IS_DEMO_MODE) {
-    return Promise.resolve(mockProperties.filter(
-      (candidate) => candidate.id !== property.id
-        && candidate.type === property.type
-        && candidate.location.city === property.location.city,
-    ).slice(0, 4));
-  }
+  if (IS_API_UNCONFIGURED) return Promise.resolve([]);
 
   return request(`/properties/${encodeURIComponent(property.id)}/similar`);
 }
@@ -196,26 +123,19 @@ export function searchAutosuggest(query: string): Promise<string[]> {
 }
 
 export function getAgents(): Promise<Agent[]> {
-  if (IS_DEMO_MODE) return Promise.resolve(mockAgents);
+  if (IS_API_UNCONFIGURED) return Promise.resolve([]);
 
   return request('/agents');
 }
 
 export function getCities(): Promise<City[]> {
-  if (IS_DEMO_MODE) {
-    return Promise.resolve(mockCities.map((city) => ({
-      ...city,
-      listings: mockProperties.filter((property) => property.location.city === city.name).length,
-    })).filter((city) => city.listings > 0));
-  }
+  if (IS_API_UNCONFIGURED) return Promise.resolve([]);
 
   return request('/cities');
 }
 
 export async function getAgentById(id: string): Promise<Agent | null> {
-  if (IS_DEMO_MODE) {
-    return mockAgents.find((agent) => agent.id === id) ?? null;
-  }
+  if (IS_API_UNCONFIGURED) return null;
 
   try {
     return await request<Agent>(`/agents/${encodeURIComponent(id)}`);
@@ -226,9 +146,7 @@ export async function getAgentById(id: string): Promise<Agent | null> {
 }
 
 export function getAgentListings(agentId: string): Promise<Property[]> {
-  if (IS_DEMO_MODE) {
-    return Promise.resolve(mockProperties.filter((property) => property.agent.id === agentId));
-  }
+  if (IS_API_UNCONFIGURED) return Promise.resolve([]);
 
   return request(`/agents/${encodeURIComponent(agentId)}/listings`);
 }
@@ -345,10 +263,10 @@ export interface PublicStats {
 }
 
 export function getPublicStats(): Promise<PublicStats> {
-  if (IS_DEMO_MODE) {
+  if (IS_API_UNCONFIGURED) {
     return Promise.resolve({
-      listings: mockProperties.length,
-      cities: new Set(mockProperties.map((property) => property.location.city)).size,
+      listings: 0,
+      cities: 0,
       buyers: 0,
       sellers: 0,
     });
@@ -373,13 +291,13 @@ export function updateUserRole(id: string, role: 'buyer' | 'seller'): Promise<Us
 }
 
 export function getBlogPosts(): Promise<BlogPost[]> {
-  if (IS_DEMO_MODE) return Promise.resolve(mockBlogPosts);
+  if (IS_API_UNCONFIGURED) return Promise.resolve(mockBlogPosts);
 
   return request('/blog');
 }
 
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
-  if (IS_DEMO_MODE) {
+  if (IS_API_UNCONFIGURED) {
     return mockBlogPosts.find((post) => post.slug === slug) ?? null;
   }
 

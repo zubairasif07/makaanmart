@@ -47,13 +47,13 @@ See [backend setup and API notes](backend/README.md) and [frontend notes](fronte
 
 ## Production deployment
 
-The Vercel project serves the frontend from the `frontend` directory. The Laravel API and its database must be deployed separately. A Render Blueprint is provided in [`render.yaml`](./render.yaml); it creates a free web service and PostgreSQL database, runs migrations and seeds the sample properties at startup, and enables the production Vercel origin for API requests.
+The Vercel project serves the frontend from the `frontend` directory. The Laravel API and its database must be deployed separately. A Render Blueprint is provided in [`render.yaml`](./render.yaml); it creates a free web service and PostgreSQL database, runs migrations, and enables the production Vercel origin for API requests.
 
 1. In Render, create a new Blueprint from this GitHub repository and apply `render.yaml`.
 2. Wait for the `makaanmart-api` service to become healthy. Its health endpoint is `/api/health`.
 3. In the Vercel project settings, add `VITE_API_URL` for Production and Preview, using the API URL plus `/api` (for example, `https://makaanmart-api.onrender.com/api`).
 4. Redeploy the Vercel project so the frontend build uses the API URL.
 
-The Render free web service may sleep when idle, and free database availability and retention are subject to Render's current limits. Upgrade to a persistent database plan before relying on this deployment for real customer data. The seeded listings are sample content, not verified offers.
+The Render free web service may sleep when idle, and free database availability and retention are subject to Render's current limits. Upgrade to a persistent database plan before relying on this deployment for real customer data. No sample properties are seeded; only seller-submitted listings appear in the marketplace.
 
-If no `VITE_API_URL` is configured, production builds use the frontend's built-in sample listings and remain browsable without a backend. These sample listings are labeled in the UI, and their contact details and inquiries are disabled. Configure `VITE_API_URL` to switch the production frontend to the Laravel API.
+If no `VITE_API_URL` is configured, the production site shows no properties and explains that listings require a connected backend. Configure `VITE_API_URL` to load seller listings from the Laravel API.

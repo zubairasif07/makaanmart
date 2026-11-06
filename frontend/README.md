@@ -14,7 +14,7 @@ npm run dev
 
 The local launcher starts Laravel and Vite together. Open `http://127.0.0.1:5173`.
 
-Production builds without `VITE_API_URL` display the built-in sample properties without requiring a backend. Set `VITE_API_URL` to the deployed Laravel API URL (including `/api`) when connecting a production backend.
+Production builds without `VITE_API_URL` show no property listings and display a notice that the backend is not connected. They never substitute sample properties. Set `VITE_API_URL` to the deployed Laravel API URL (including `/api`) to load seller listings.
 
 ## Validate and build
 

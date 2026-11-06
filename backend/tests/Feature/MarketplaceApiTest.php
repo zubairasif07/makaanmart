@@ -27,15 +27,18 @@ class MarketplaceApiTest extends TestCase
             ->assertHeader('Access-Control-Allow-Origin', 'https://makaanmart.vercel.app');
     }
 
-    public function test_seeded_properties_are_returned_with_frontend_shape(): void
+    public function test_database_seeder_does_not_create_sample_properties(): void
     {
         $this->seed();
 
-        $this->getJson('/api/properties?city=Lahore')
+        $this->assertDatabaseCount('properties', 0);
+
+        $this->getJson('/api/properties')
             ->assertOk()
-            ->assertJsonPath('data.0.location.city', 'Lahore')
+            ->assertJsonPath('data', [])
+            ->assertJsonPath('total', 0)
             ->assertJsonStructure([
-                'data' => [['id', 'location' => ['city'], 'agent' => ['id']]],
+                'data',
                 'total',
                 'page',
                 'totalPages',
